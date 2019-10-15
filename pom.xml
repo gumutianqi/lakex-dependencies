@@ -46,6 +46,7 @@
         <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
         <spring-cloud-alibaba.version>2.1.0.RELEASE</spring-cloud-alibaba.version>
         <lombok.version>1.18.10</lombok.version>
+        <mica-auto.version>1.1.0</mica-auto.version>
 
         <!-- data source -->
         <mysql-driver-6.version>6.0.6</mysql-driver-6.version> <!-- just version -->
@@ -196,6 +197,11 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.dreamlu</groupId>
+                <artifactId>mica-auto</artifactId>
+                <version>${mica-auto.version}</version>
             </dependency>
 
             <!-- data source -->
