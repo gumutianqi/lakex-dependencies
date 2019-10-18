@@ -37,6 +37,7 @@
 
         <!-- maven plugin -->
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+        <maven-findbugs-maven-plugin.version>3.0.5</maven-findbugs-maven-plugin.version>
         <javadoc.skip>true</javadoc.skip>
         <gpg.skip>false</gpg.skip>
 
@@ -117,7 +118,8 @@
         <google.tink.version>1.2.2</google.tink.version>
         <google.protobuf-java.version>3.10.0</google.protobuf-java.version>
         <google.grpc.version>1.24.0</google.grpc.version> <!-- just version -->
-        <google.findbugs.version>3.0.2</google.findbugs.version>
+        <google.findbugs.version>3.0.1</google.findbugs.version>
+        <google.findbugs-jsr305.version>3.0.2</google.findbugs-jsr305.version>
 
         <!-- swagger api doc -->
         <springfox.version>2.9.2</springfox.version>
@@ -488,6 +490,16 @@
             <dependency>
                 <groupId>com.google.code.findbugs</groupId>
                 <artifactId>jsr305</artifactId>
+                <version>${google.findbugs-jsr305.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>findbugs</artifactId>
+                <version>${google.findbugs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>annotations</artifactId>
                 <version>${google.findbugs.version}</version>
             </dependency>
 
@@ -746,6 +758,20 @@
                             <goals>
                                 <goal>jar-no-fork</goal>
                             </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>findbugs-maven-plugin</artifactId>
+                    <version>${maven-findbugs-maven-plugin.version}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                            <configuration>
+                            </configuration>
                         </execution>
                     </executions>
                 </plugin>
