@@ -162,9 +162,9 @@
         <aliyun-openservices-log.version>0.6.39</aliyun-openservices-log.version>
         <aliyun-log-producer.version>0.3.3</aliyun-log-producer.version>
 
-        <!-- WeiChat Platform SDK -->
+        <!-- WeChat Platform SDK -->
         <!-- https://github.com/Wechat-Group/WxJava -->
-        <weixin-java-tools.version>3.5.0</weixin-java-tools.version> <!-- just version -->
+        <weixin-java-tools.version>3.6.0</weixin-java-tools.version> <!-- just version -->
 
         <!-- test -->
         <gatling.version>3.2.1</gatling.version>
