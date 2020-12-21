@@ -101,7 +101,7 @@
         <hutool.version>5.2.5</hutool.version>
         <kryo.version>2.24.0</kryo.version>
         <bouncycastle-jdk16.version>1.46</bouncycastle-jdk16.version>
-        <xstream.version>1.4.11.1</xstream.version>
+        <xstream.version>1.4.15</xstream.version>
         <ehcache3.version>3.8.1</ehcache3.version>
 
         <!-- auth extends -->
